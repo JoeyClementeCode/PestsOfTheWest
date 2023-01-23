@@ -1,9 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
-using Vector2 = UnityEngine.Vector2;
+
 
 namespace pest
 {
@@ -20,18 +19,30 @@ namespace pest
 
         // Components and Random Variables
         private Rigidbody2D rigidBody;
-        private CapsuleCollider2D currentCollider;
+        private BoxCollider2D currentCollider;
         private float horizontalInput;
         
         void Start()
         {
             rigidBody = GetComponent<Rigidbody2D>();
-            currentCollider = GetComponent<CapsuleCollider2D>();
+            currentCollider = GetComponent<BoxCollider2D>();
         }
+        
         private void Update()
         {
             horizontalInput = Input.GetAxisRaw("Horizontal");
+
+            if (horizontalInput < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
         }
+        
+        
         void FixedUpdate()
         {
             rigidBody.velocity = new Vector2(horizontalInput * speed, rigidBody.velocity.y);
@@ -41,6 +52,7 @@ namespace pest
                 rigidBody.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
             }
         }
+        
         private bool IsGrounded()
         {
             RaycastHit2D raycastHit2D = Physics2D.Raycast(currentCollider.bounds.center, Vector2.down, currentCollider.bounds.extents.y + extraDistance, layerMask);
