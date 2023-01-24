@@ -7,6 +7,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../JosephClemente-VerticalShooter/JosephClemente-VerticalShooter/Assets/Scripts/Projectile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../JosephClemente-VerticalShooter/JosephClemente-VerticalShooter/Assets/Scripts/Weapons/Shooting.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../JosephClemente-VerticalShooter/JosephClemente-VerticalShooter/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../JosephClemente-VerticalShooter/JosephClemente-VerticalShooter/Assets/Scripts/FollowCursor.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -67,6 +73,7 @@
       <workItem from="1674463427859" duration="1563000" />
       <workItem from="1674497436062" duration="1529000" />
       <workItem from="1674594775893" duration="493000" />
+      <workItem from="1674597881921" duration="1950000" />
     </task>
     <servers />
   </component>

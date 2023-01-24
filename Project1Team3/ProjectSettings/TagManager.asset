@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Platform
   - Interact
+  - Hazard
+  - Enemy
   layers:
   - Default
   - TransparentFX
