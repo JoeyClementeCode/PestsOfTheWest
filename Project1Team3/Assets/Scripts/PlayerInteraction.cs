@@ -7,12 +7,25 @@ namespace pest
 {
     public class PlayerInteraction : MonoBehaviour
     {
+        [SerializeField]
+        private SpriteRenderer spriteRenderer;
+    
         private void OnTriggerStay2D(Collider2D other)
         {
-            if (Input.GetKey(KeyCode.Space) && other.transform.gameObject.CompareTag("Interact"))
+            if (other.transform.gameObject.CompareTag("Interact"))
             {
-                Destroy(other.gameObject);
+                spriteRenderer.material.shader = Shader.Find("Shader Graphs/OutlineShader");
+                
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    Destroy(other.gameObject);
+                }
             }
+        }
+        
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            spriteRenderer.material.shader = Shader.Find("Universal Render Pipeline/2D/Sprite-Lit-Default");
         }
     }
 }
