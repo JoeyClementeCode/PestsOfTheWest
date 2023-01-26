@@ -8,6 +8,7 @@ TagManager:
   - Interact
   - Hazard
   - Enemy
+  - Throwable
   layers:
   - Default
   - TransparentFX
