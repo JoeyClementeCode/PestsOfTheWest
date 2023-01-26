@@ -622,7 +622,7 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 71779801}
-  m_BreakForce: 500
+  m_BreakForce: 350
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.5}
@@ -1179,7 +1179,7 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 762681298}
-  m_BreakForce: 500
+  m_BreakForce: 300
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
@@ -1754,6 +1754,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 430137944556957384, guid: 6322dbeb6e4df1240849227465aebd3d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430137944556957390, guid: 6322dbeb6e4df1240849227465aebd3d, type: 3}
+      propertyPath: m_BreakForce
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 430137944556957391, guid: 6322dbeb6e4df1240849227465aebd3d, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
