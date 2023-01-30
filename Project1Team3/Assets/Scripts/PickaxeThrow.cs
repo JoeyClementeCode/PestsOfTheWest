@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ namespace pest
         private float angle;
         private Vector3 shootDirection;
 
-        private bool canThrow = true;
+        public bool canThrow = true;
         
         [Header("Parameters")]
         public float speed;
@@ -31,7 +32,7 @@ namespace pest
             shootDirection = Camera.main.ScreenToWorldPoint(shootDirection);
             shootDirection -= transform.position;
 
-            if (Input.GetKeyDown(KeyCode.Mouse0) && canThrow)
+            if (Input.GetKey(KeyCode.Mouse0) && canThrow)
             {
                 StartCoroutine(Throw());
             }
