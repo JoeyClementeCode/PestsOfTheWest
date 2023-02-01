@@ -13480,7 +13480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canThrow: 1
-  speed: 2.5
+  speed: 2.4
   pickaxePrefab: {fileID: 4167374910646480932, guid: 9177c450b1342cb4ab006648aa3ffda9, type: 3}
   throwDelay: 0.5
 --- !u!1001 &430137944494091027
