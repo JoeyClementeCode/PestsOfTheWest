@@ -9,21 +9,10 @@ namespace pest
     {
         public GameObject MenuMain;
         public GameObject CreditsMenu;
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
 
         public void StartButton()
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
         public void CreditsButton()

@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 40b76d98dd9fa384f8e4c68bd0ce6324
+  - enabled: 1
+    path: Assets/Scenes/Brennan - PauseMenuTest.unity
+    guid: ee8b2bab4011fe140b76011680af7b2e
+  - enabled: 1
     path: Assets/Scenes/Lyden- test scene.unity
     guid: 24d26091d15bc944e9d65243e98ceda7
   m_configObjects: {}
