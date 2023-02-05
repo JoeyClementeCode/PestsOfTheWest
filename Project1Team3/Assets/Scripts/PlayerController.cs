@@ -21,11 +21,13 @@ namespace pest
         private Rigidbody2D rigidBody;
         private BoxCollider2D currentCollider;
         private float horizontalInput;
+        private SoundManager sound;
         
         void Start()
         {
             rigidBody = GetComponent<Rigidbody2D>();
             currentCollider = GetComponent<BoxCollider2D>();
+            sound = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         }
         
         private void Update()
@@ -50,6 +52,7 @@ namespace pest
             if (IsGrounded() && Input.GetKey(KeyCode.W))
             {
                 rigidBody.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
+                sound.SetAudio("Jump");
             }
         }
         

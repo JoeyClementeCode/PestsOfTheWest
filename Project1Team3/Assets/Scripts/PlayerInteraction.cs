@@ -9,7 +9,13 @@ namespace pest
     {
         [SerializeField]
         private SpriteRenderer spriteRenderer;
-    
+        private SoundManager sound;
+
+        private void Start()
+        {
+            sound = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        }
+
         private void OnTriggerStay2D(Collider2D other)
         {
             if (other.transform.gameObject.CompareTag("Interact"))
@@ -19,6 +25,7 @@ namespace pest
                 if (Input.GetKey(KeyCode.Space))
                 {
                     Destroy(other.gameObject);
+                    sound.SetAudio("Interact");
                 }
             }
         }
