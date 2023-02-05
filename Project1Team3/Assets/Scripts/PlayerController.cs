@@ -22,7 +22,8 @@ namespace pest
         private BoxCollider2D currentCollider;
         private float horizontalInput;
         private SoundManager sound;
-        
+        [SerializeField] private Animator animator;
+
         void Start()
         {
             rigidBody = GetComponent<Rigidbody2D>();
@@ -54,6 +55,9 @@ namespace pest
                 rigidBody.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
                 sound.SetAudio("Jump");
             }
+            
+            animator.SetFloat("velocityX", Mathf.Abs(rigidBody.velocity.x));
+            animator.SetFloat("velocityY", rigidBody.velocity.y);
         }
         
         private bool IsGrounded()

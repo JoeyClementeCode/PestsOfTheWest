@@ -7,6 +7,8 @@ namespace pest
 {
     public class PickaxeThrow : MonoBehaviour
     {
+        [SerializeField] private Animator animator;
+        [SerializeField] private Transform pickaxePoint;
         private Rigidbody2D rb;
         private Vector2 mousePos;
         private Vector2 lookDir;
@@ -40,10 +42,13 @@ namespace pest
         
         private IEnumerator Throw()
         {
-            GameObject newPickaxe = Instantiate(pickaxePrefab, transform.position, Quaternion.identity);
-            newPickaxe.GetComponent<Rigidbody2D>().velocity = new Vector2(shootDirection.x * speed, shootDirection.y * speed);
             canThrow = false;
-            yield return new WaitForSeconds(throwDelay);
+            animator.SetBool("pickaxeIsThrown", true);
+            yield return new WaitForSeconds(throwDelay / 2.5f);
+            GameObject newPickaxe = Instantiate(pickaxePrefab, pickaxePoint.position, Quaternion.identity);
+            newPickaxe.GetComponent<Rigidbody2D>().velocity = new Vector2(shootDirection.x * speed, shootDirection.y * speed);
+            animator.SetBool("pickaxeIsThrown", false);
+            yield return new WaitForSeconds(throwDelay / 2);
             canThrow = true;
         }
     }

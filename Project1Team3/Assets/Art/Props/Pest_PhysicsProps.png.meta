@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99aa23c04d5c5f243be819801b8f39f0
-      internalID: -941351385
+      spriteID: fd49bd4c21624d746ac694086b7bb9ca
+      internalID: 1391922649
       vertices: []
       indices: 
       edges: []
@@ -192,10 +192,10 @@ TextureImporter:
       name: Pest_PhysicsProps_4
       rect:
         serializedVersion: 2
-        x: 113
+        x: 0
         y: 0
-        width: 30
-        height: 128
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 009ceafac48c6c9488e224ec6ed51759
-      internalID: -1094893662
+      spriteID: 9e550f9adc2afca429c3eb9b8728b175
+      internalID: -1307748774
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c811035758fbd54faf750cccaf6304c
-      internalID: 1349121425
+      spriteID: 42549362398476b45afcfda322f609e2
+      internalID: -618451836
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pest_PhysicsProps_4: -1094893662
+      Pest_PhysicsProps_4: -1307748774
       Pest_PhysicsProps_1: -1064719365
-      Pest_PhysicsProps_5: 1349121425
+      Pest_PhysicsProps_5: -618451836
       Pest_PhysicsProps_0: 939204187
       Pest_PhysicsProps_2: -742161333
-      Pest_PhysicsProps_3: -941351385
+      Pest_PhysicsProps_3: 1391922649
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
