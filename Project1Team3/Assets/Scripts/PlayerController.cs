@@ -39,7 +39,7 @@ namespace pest
             {
                 transform.localScale = new Vector3(-1, 1, 1);
             }
-            else
+            else if (horizontalInput > 0)
             {
                 transform.localScale = new Vector3(1, 1, 1);
             }
