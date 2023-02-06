@@ -7,9 +7,11 @@ namespace pest
 {
     public class PickaxeFunction : MonoBehaviour
     {
+        public float pickaxeDestroyTime = 2.5f;
+        
         private void Start()
         {
-            Destroy(gameObject, 4.0f);
+            Destroy(gameObject, pickaxeDestroyTime);
         }
 
         private void OnCollisionEnter2D(Collision2D col)

@@ -33,5 +33,10 @@ namespace pest
             Application.Quit();
         }
 
+        public void MenuVisit()
+        {
+            SceneManager.LoadScene(0);
+        }
+        
     }
 }

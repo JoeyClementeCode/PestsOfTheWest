@@ -9,7 +9,10 @@ namespace pest
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.transform.CompareTag("Player"))
+            {
                 Destroy(collision.gameObject);
+                PlayerDeath.PlayerDead();
+            }
         } 
     }
 }

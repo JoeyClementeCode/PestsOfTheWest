@@ -58,6 +58,7 @@ namespace pest
             
             animator.SetFloat("velocityX", Mathf.Abs(rigidBody.velocity.x));
             animator.SetFloat("velocityY", rigidBody.velocity.y);
+            animator.SetBool("isGrounded", IsGrounded());
         }
         
         private bool IsGrounded()

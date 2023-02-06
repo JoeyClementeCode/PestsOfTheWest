@@ -181,3 +181,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247539d649da96b4b837b539977b5985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickaxeDestroyTime: 1.5
