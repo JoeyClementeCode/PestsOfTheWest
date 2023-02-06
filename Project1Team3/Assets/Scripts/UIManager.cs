@@ -20,6 +20,10 @@ namespace pest
         public TextMeshProUGUI enemyCountText;
         public GameObject allEnemiesGoneText;
 
+        public GameObject progressBar;
+        public float barProgress = 1.8f;
+
+        
 
 
         // Start is called before the first frame update
@@ -61,6 +65,22 @@ namespace pest
             {
                 allEnemiesGoneText.SetActive(true);
             }
+
+            if (barProgress < 1.8)
+            {
+                barProgress += Time.deltaTime;
+            }
+
+            if (Input.GetMouseButtonDown(0) && barProgress >= 1.8f)
+            {
+                barProgress = 0.0f;
+            }
+
+            
+
+            progressBar.transform.localScale = new Vector3(barProgress/1.8f, 1, 1);
+
+            
 
         }
 

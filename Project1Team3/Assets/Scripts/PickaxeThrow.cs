@@ -17,6 +17,7 @@ namespace pest
 
         public bool canThrow = true;
         
+        
         [Header("Parameters")]
         public float speed;
         [SerializeField] private GameObject pickaxePrefab;
