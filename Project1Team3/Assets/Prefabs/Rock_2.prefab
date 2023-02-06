@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 336146465001054759}
   - component: {fileID: 780972802647188122}
   - component: {fileID: 334051992470566189}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rock_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -941351385, guid: cd8ef44e1570a754396d7c33f86f7b47, type: 3}
+  m_Sprite: {fileID: 1391922649, guid: cd8ef44e1570a754396d7c33f86f7b47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,7 +132,7 @@ HingeJoint2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2822906903684265204}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}

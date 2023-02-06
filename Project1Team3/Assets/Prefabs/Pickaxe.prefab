@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 219015845951520213}
   - component: {fileID: 5266411768994129124}
   - component: {fileID: 8622114226287892567}
+  - component: {fileID: 576457348323943908}
   m_Layer: 0
   m_Name: Pickaxe
   m_TagString: Untagged
@@ -168,3 +169,15 @@ PolygonCollider2D:
       - {x: 0.046875, y: -0.4765625}
       - {x: 0.03125, y: -0.35546875}
       - {x: 0.02734375, y: -0.35546875}
+--- !u!114 &576457348323943908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167374910646480932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247539d649da96b4b837b539977b5985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

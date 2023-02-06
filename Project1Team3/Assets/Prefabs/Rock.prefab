@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8276540322309796681}
   - component: {fileID: 8276540322309796685}
   - component: {fileID: 8276540322309796690}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ HingeJoint2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8276540322309796680}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}

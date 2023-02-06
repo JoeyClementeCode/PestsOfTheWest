@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 2906336054373442298}
   - component: {fileID: 2906336054373442246}
   m_Layer: 3
-  m_Name: Scaffolding
-  m_TagString: Interact
+  m_Name: Scaffolding Inv
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
